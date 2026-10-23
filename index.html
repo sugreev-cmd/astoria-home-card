@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Astoria Home</title>
+<meta name="description" content="Astoria Home, New Delhi: WhatsApp, catalogue, website and Instagram in one place.">
+<meta property="og:title" content="Astoria Home">
+<meta property="og:description" content="Handpicked decor, lighting and furniture. Showroom on MG Road, New Delhi.">
+<meta name="theme-color" content="#24302b">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap">
+<style>
+:root{
+  --stone:#ecebe6; --paper:#fbfbf9; --ink:#1f2a26; --ink-soft:#55625c;
+  --panel:#24302b; --panel-fg:#eae6dc; --brass:#a8834b; --brass-deep:#8a6a3a;
+  --line:#d6d4cc; --tile:#fbf7ee; --row:#ffffff; --wa:#1f7a4d;
+  --display:"Marcellus","Cormorant Garamond",Georgia,serif;
+  --body:"Jost","Avenir Next","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --stone:#161c19; --paper:#1d2421; --ink:#ece8de; --ink-soft:#a9b0aa; --line:#33403a; --row:#212a26; --brass:#c19a5c; --brass-deep:#c19a5c; --wa:#2f9a64; color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--stone);color:var(--ink);font-family:var(--body);font-size:16px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-top:max(24px,env(safe-area-inset-top,0px));padding-bottom:max(40px,env(safe-area-inset-bottom,0px));
+  display:flex;justify-content:center;-webkit-font-smoothing:antialiased}
+.wrap{width:100%;max-width:440px;display:flex;flex-direction:column;gap:14px}
+.brand{background:var(--panel);color:var(--panel-fg);border-radius:22px;padding:32px 26px 28px;position:relative;overflow:hidden;text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px}
+.brand::after,.brand::before{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.brand::after{right:-110px;bottom:-110px;width:300px;height:300px;border:1px solid rgba(168,131,75,.35)}
+.brand::before{right:-55px;bottom:-55px;width:190px;height:190px;border:1px solid rgba(168,131,75,.22)}
+.logo-tile{background:var(--tile);border-radius:16px;padding:16px 20px;box-shadow:0 10px 30px rgba(0,0,0,.3),inset 0 0 0 1px rgba(168,131,75,.35)}
+.logo-tile img{display:block;width:104px;height:auto}
+.wordmark{font-family:var(--display);font-size:22px;letter-spacing:.3em;text-transform:uppercase;margin-top:6px;padding-left:.3em}
+.tag{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:#c9a46a;font-weight:500}
+.sub{font-weight:300;font-size:15px;line-height:1.5;margin:0;max-width:30ch;text-wrap:balance;opacity:.9}
+.wa{display:flex;align-items:center;justify-content:center;gap:12px;min-height:58px;border-radius:14px;background:var(--wa);color:#fff;text-decoration:none;font-weight:500;font-size:17px;letter-spacing:.02em}
+.wa svg{width:24px;height:24px}
+.wa small{display:block;font-weight:300;font-size:13px;opacity:.9;letter-spacing:.04em}
+.links{display:flex;flex-direction:column;gap:10px}
+.lnk{display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:14px;padding:12px 16px 12px 12px;background:var(--row);border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .15s}
+.lnk:hover,.lnk:focus-visible{border-color:var(--brass);outline:none}
+.lnk:focus-visible{box-shadow:0 0 0 3px rgba(168,131,75,.3)}
+@media (prefers-reduced-motion:no-preference){.lnk:active{transform:scale(.985)}}
+.ic{width:44px;height:44px;border-radius:12px;background:var(--panel);color:#c9a46a;display:grid;place-items:center}
+.ic svg{width:22px;height:22px}
+.t{min-width:0}
+.t b{display:block;font-weight:500;font-size:16px}
+.t span{display:block;font-size:13px;color:var(--ink-soft);overflow-wrap:anywhere}
+.arrow{color:var(--brass);font-size:18px}
+.visit{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:8px}
+.visit h2{font-family:var(--display);font-weight:400;font-size:18px;margin:0;letter-spacing:.04em}
+.visit p{margin:0;color:var(--ink-soft);font-size:14px;line-height:1.55}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px}
+.mini{display:flex;align-items:center;justify-content:center;gap:8px;min-height:46px;border-radius:12px;border:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:500;font-size:14px;background:var(--row)}
+.mini svg{width:18px;height:18px;color:var(--brass)}
+.mini:hover,.mini:focus-visible{border-color:var(--brass);outline:none}
+footer{text-align:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <section class="brand" aria-label="Astoria Home">
+    <div class="logo-tile"><img alt="Astoria Home logo" width="104" height="62" src="data:image/png;base64,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"></div>
+    <div class="wordmark">Astoria Home</div>
+    <div class="tag">Decor &middot; Lighting &middot; Furniture</div>
+    <p class="sub">Handpicked decor for your home, from our showroom on MG Road, New Delhi.</p>
+  </section>
+
+  <a class="wa" href="https://wa.me/919220950085?text=Hi%20Astoria%20Home%2C%20I%20would%20like%20to%20know%20more.">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.7-.3Z"/></svg>
+    <span>Chat on WhatsApp<small>+91 92209 50085</small></span>
+  </a>
+
+  <nav class="links" aria-label="Astoria links">
+    <a class="lnk" href="https://drive.google.com/file/d/1PSIxfvL4uhOPbAtmjMsKptScF_IKomdr/view" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20v3H6.5A2.5 2.5 0 0 1 4 20.5ZM9 7.5h7M9 11h5"/></svg></span>
+      <span class="t"><b>Our Catalogue</b><span>Diwali collection 2026 &middot; 75 pages</span></span><span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="lnk" href="https://astoriahome.in" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
+      <span class="t"><b>Astoria Home Website</b><span>astoriahome.in</span></span><span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="lnk" href="https://www.instagram.com/astoriahome.in/" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor"/></svg></span>
+      <span class="t"><b>Instagram</b><span>@astoriahome.in</span></span><span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="lnk" href="https://www.astorialiving.in" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 13v5h16v-5M6 13V9.5A2.5 2.5 0 0 1 8.5 7h7A2.5 2.5 0 0 1 18 9.5V13M3 13h18M6 18v2M18 18v2"/></svg></span>
+      <span class="t"><b>Astoria Living</b><span>Furniture &amp; interiors &middot; astorialiving.in</span></span><span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
+  </nav>
+
+  <section class="visit" aria-label="Visit the showroom">
+    <h2>Visit our showroom</h2>
+    <p>145, M.G. Road, Sultanpur, New Delhi 110030<br>Open daily, 10 am to 8 pm</p>
+    <div class="two">
+      <a class="mini" href="https://www.google.com/maps/search/?api=1&amp;query=Astoria%20Living%20145%20MG%20Road%20Sultanpur%20New%20Delhi" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>Directions</a>
+      <a class="mini" href="tel:+919220950085"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>Call us</a>
+    </div>
+  </section>
+
+  <footer>Astoria Home &middot; New Delhi</footer>
+</main>
+</body>
+</html>
